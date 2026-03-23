@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Artesanías CTG</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="logo">
+      <a href=""><img src="img/logowebnew.png" alt="Artesanías CTG" class="logo"></a>
+      
+    </div>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="navMenu">
+      <button class="close-menu" id="closeMenu">cerrar menu</button>
+      <ul>
+        <li><a href="#inicio" data-i18n="menu_home">Inicio</a></li>
+        <li><a href="#catalogo" data-i18n="menu_catalogue">Catálogo</a></li>
+        <li><a href="#emprendedores" data-i18n="menu_entrepreneurs">Emprendedores</a></li>
+        <li><a href="#problema" data-i18n="menu_solution">Problema/Solución</a></li>
+        <li><a href="#beneficios" data-i18n="menu_benefits">Beneficios</a></li>
+        <li><a href="#tecnologia" data-i18n="menu_technology">Tecnología</a></li>
+        <li><a href="#contacto" data-i18n="menu_contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switcher">
+      <button id="es" class="active">ES</button>
+      <button id="en">EN</button>
+    </div>
+  </header>
+
+  <!-- Inicio -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1 data-i18n="hero_title">Catálogo digital de artesanos de Cartagena</h1>
+      <p data-i18n="hero_subtitle">
+        Comercio justo, transparencia y crecimiento local de la cultura caribeña.
+      </p>
+      <a href="#catalogo" class="cta-btn" data-i18n="hero_cta">Ver catálogo</a>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+<section id="catalogo" class="catalogue-section">
+  <h2 data-i18n="catalogue_title">Nuestro catálogo</h2>
+
+  <div class="catalogue-grid" id="catalogueGrid">
+    <!-- Cards generadas por JavaScript -->
+  </div>
+
+</section>
+
+  <!-- Emprendedores -->
+  <section id="emprendedores" class="emprendedores-section">
+    <h2 data-i18n="entrepreneurs_title">Conoce a nuestros emprendedores</h2>
+    <div class="entrepreneur-grid" id="entrepreneurGrid">
+      <!-- Perfiles generados por JavaScript -->
+    </div>
+  </section>
+
+  <!-- Problema/Solución -->
+  <section id="problema" class="problema-section">
+    <h2 data-i18n="problem_solution_title">Problema &amp; Solución</h2>
+    <div class="problem-solution">
+      <div>
+        <h3 data-i18n="problem">Problema</h3>
+        <p data-i18n="problem_text">
+          La visibilidad limitada y el acceso restringido impiden que los artesanos de Cartagena crezcan plenamente.
+        </p>
+      </div>
+      <div>
+        <h3 data-i18n="solution">Solución</h3>
+        <p data-i18n="solution_text">
+          Un catálogo digital abierto a todos, impulsando ventas directas, comercio justo y transparencia.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="beneficios" class="beneficios-section">
+    <h2 data-i18n="benefits_title">Beneficios</h2>
+    <ul class="benefits-list">
+      <li data-i18n="benefit_1">Precios en COP y USD</li>
+      <li data-i18n="benefit_2">Contacto directo con artesanos</li>
+      <li data-i18n="benefit_3">Comercio justo y transparente</li>
+      <li data-i18n="benefit_4">Crecimiento y reconocimiento local</li>
+      <li data-i18n="benefit_5">Fácil de usar y compartir</li>
+    </ul>
+  </section>
+
+  <!-- Tecnología (QR) -->
+  <section id="tecnologia" class="tech-section">
+    <h2 data-i18n="tech_title">Tecnología: QR Digital</h2>
+    <div class="tech-content">
+      <p data-i18n="tech_text">
+        Cada artesano cuenta con un código QR único que facilita el acceso rápido a su perfil, productos y contacto, tanto en el mercado local como para turistas.
+      </p>
+      <img src="img/qrpaginaweb.png" alt="Ejemplo código QR" class="qr-img">
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contact-section">
+    <h2 data-i18n="contact_title">Contacto directo</h2>
+    <form name="contactForm" id="contactForm">
+      <input type="text" name="name" required placeholder="Nombre" data-i18n-placeholder="contact_name">
+      <input type="email" name="email" required placeholder="Email" data-i18n-placeholder="contact_email">
+      <textarea name="message" required placeholder="Mensaje" data-i18n-placeholder="contact_message"></textarea>
+      <button type="submit" data-i18n="contact_send">Enviar</button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </section>
+
+  <section id="equipo" class="equipo-section">
+  <h2>Nuestro equipo</h2>
+
+  <div class="equipo-grid">
+    
+    <div class="miembro">
+      <img src="img/josseth.jpeg" alt="josseth castaño">
+      <h3>Josseth Castaño Osorio</h3>
+      <p>Ingeniero de software</p>
+      <p>Semestre: 7</p>
+      <p>numero de contacto: 3042668475</p>
+      <p>correo: josseth.c.o@gmail.com</p>
+
+    </div>
+
+    <div class="miembro">
+      <img src="img/raquel.jpeg" alt="raquel puello">
+      <h3>Raquel Puello Pajaro</h3>
+      <p>Contaduria Publica</p>
+      <p>Semestre: 7</p>
+      <p>numero de contacto: 3012392599</p>
+      <p>correo: raquel.p.p@gmail.com</p>
+    </div>
+
+    <div class="miembro">
+      <img src="img/fanny.jpeg" alt="fanny monterrosa">
+      <h3>Fanny Tatiana Monterrosa Castro</h3>
+      <p>Administracion de negocios internacionales</p>
+      <p>Semestre: 4</p>
+      <p>numero de contacto: 3218101546</p>
+      <p>correo: fannytati23@gmail.com</p>
+    </div>
+
+    <div class="miembro">
+      <img src="img/maria.jpeg" alt="maria paula utria">
+      <h3>Maria Paula Utria Amor</h3>
+      <p>Medicina</p>
+      <p>Semestre: 6</p>
+      <p>numero de contacto: 3205758944</p>
+      <p>correo: maria.p.u.a@gmail.com</p>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Artesanías CTG. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+    <div class="socials">
+      <a href="https://www.instagram.com/"><img src="img/iconoinst.svg" alt="Instagram"></a>
+      <a href="https://web.whatsapp.com/"><img src="img/iconws.svg" alt="WhatsApp"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
