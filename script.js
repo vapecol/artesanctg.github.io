@@ -1,3 +1,4 @@
+
 // CONFIGURACIÓN DE DATOS
 const rateCOPtoUSD = 0.00026; // 1 COP ≈ 0.00026 USD (ajustar según tasa diaria)
 const toggle = document.getElementById("menuToggle");
