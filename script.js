@@ -49,7 +49,7 @@ const data = {
   
   entrepreneurs: [
     {
-      image: "img/mauricio.jpg",
+      image: "img/Mauricio.jpg",
       name: { es: "Mauricio Martínez", en: "Mauricio Martínez" },
       craft: { es: "Tejedor de hamacas", en: "Hammock Weaver" },
       bio: {
